@@ -26,7 +26,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "lint": "tsc --noemit && eslint --fix"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -123,7 +124,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "eslint --fix",
+      "npm run lint",
       "prettier --write",
       "npm run test:staged"
     ]
