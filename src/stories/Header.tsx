@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import "./header.css";
 
 export interface HeaderProps {
+  // eslint-disable-next-line
   user?: {};
   onLogin: () => void;
   onLogout: () => void;
