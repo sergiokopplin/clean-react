@@ -76,6 +76,7 @@
           "groups": [
             "/^(react)/",
             "module",
+            "/^(data|domain)/",
             [
               "parent",
               "sibling",
