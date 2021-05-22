@@ -29,7 +29,13 @@
     "lint-staged": "lint-staged"
   },
   "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "eslint-plugin-import-helpers"
+    ],
     "extends": [
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
       "react-app",
       "react-app/jest",
       "prettier"
@@ -43,7 +49,45 @@
           "import/no-anonymous-default-export": "off"
         }
       }
-    ]
+    ],
+    "settings": {
+      "import/resolver": {
+        "babel-plugin-root-import": {
+          "rootPathSuffix": "src"
+        },
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".ts",
+            ".tsx",
+            ".d.ts"
+          ]
+        }
+      }
+    },
+    "rules": {
+      "import-helpers/order-imports": [
+        "warn",
+        {
+          "newlinesBetween": "always",
+          "groups": [
+            "/^(react)/",
+            "module",
+            [
+              "parent",
+              "sibling",
+              "index"
+            ]
+          ],
+          "alphabetize": {
+            "order": "asc",
+            "ignoreCase": true
+          }
+        }
+      ]
+    }
   },
   "prettier": {},
   "browserslist": {
@@ -68,7 +112,10 @@
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
     "@types/faker": "^5.5.5",
+    "@typescript-eslint/parser": "^4.24.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-import-helpers": "^1.1.0",
     "faker": "^5.5.3",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
