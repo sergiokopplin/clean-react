@@ -2,11 +2,7 @@ import faker from 'faker';
 
 import { HttpStatusCode } from 'data/protocols';
 import { HttpPostClientSpy } from 'data/test';
-import {
-  InvalidCredentialsError,
-  ServerError,
-  UnexpectedError,
-} from 'domain/errors';
+import { InvalidCredentialsError, UnexpectedError } from 'domain/errors';
 import { mockAuthentication } from 'domain/test';
 
 import { RemoteAuthentication } from './remote-authentication';
