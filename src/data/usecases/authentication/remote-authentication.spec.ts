@@ -4,8 +4,7 @@ import { HttpStatusCode } from 'data/protocols';
 import { HttpPostClientSpy } from 'data/test';
 import { InvalidCredentialsError, UnexpectedError } from 'domain/errors';
 import { AccountModel } from 'domain/models';
-import { mockAuthentication } from 'domain/test';
-import { mockAccountModel } from 'domain/test/mock-account';
+import { mockAuthentication, mockAccountModel } from 'domain/test';
 import { AuthenticationParams } from 'domain/usecases';
 
 import { RemoteAuthentication } from './remote-authentication';
