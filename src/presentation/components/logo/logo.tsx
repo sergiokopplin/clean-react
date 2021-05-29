@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
-export const Logo: FC = () => {
+export interface LogoProps {}
+
+export const Logo: FC<LogoProps> = () => {
   return (
     <img
       alt=""

@@ -1,16 +1,13 @@
 import { FC } from 'react';
 
-import { Logo, Spinner } from 'presentation/components';
+import { Spinner, Footer, LoginHeader } from 'presentation/components';
 
 import css from './login-styles.module.scss';
 
 export const Login: FC = () => {
   return (
     <div className={css.login}>
-      <header className={css.header}>
-        <Logo />
-        <h1>4Dev - Enquetes para Programadores</h1>
-      </header>
+      <LoginHeader />
       <form className={css.form}>
         <h2>Login</h2>
         <div className={css.inputWrap}>
@@ -34,7 +31,7 @@ export const Login: FC = () => {
           <span className={css.error}>Erro</span>
         </div>
       </form>
-      <footer className={css.footer} />
+      <Footer />
     </div>
   );
 };
