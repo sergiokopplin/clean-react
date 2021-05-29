@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import { Login } from 'presentation/pages';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div />
+    <Login />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
