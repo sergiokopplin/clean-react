@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Login } from 'presentation/pages';
+import { Login } from 'presentation/pages/login/login';
 import 'presentation/styles/global.module.scss';
 
 export const Router: FC = () => {
