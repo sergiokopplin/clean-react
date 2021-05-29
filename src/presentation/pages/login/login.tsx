@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import { Logo, Spinner } from 'presentation/components';
 
-import css from './login-styles.scss';
+import css from './login-styles.module.scss';
 
 export const Login: FC = () => {
   return (

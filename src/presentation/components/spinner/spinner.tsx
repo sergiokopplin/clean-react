@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes } from 'react';
 
-import css from './spinner-styles.scss';
+import css from './spinner-styles.module.scss';
 
 type Props = HTMLAttributes<HTMLElement>;
 
