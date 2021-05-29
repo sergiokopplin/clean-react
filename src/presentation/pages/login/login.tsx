@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Spinner, Footer, LoginHeader } from 'presentation/components';
+import { Spinner, Footer, LoginHeader, Input } from 'presentation/components';
 
 import css from './login-styles.module.scss';
 
@@ -12,18 +12,8 @@ export const Login: FC<LoginProps> = () => {
       <LoginHeader />
       <form className={css.form}>
         <h2>Login</h2>
-        <div className={css.inputWrap}>
-          <input type="email" name="email" placeholder="Digite seu e-mail" />
-          <span className={css.status}>🔴</span>
-        </div>
-        <div className={css.inputWrap}>
-          <input
-            type="password"
-            name="password"
-            placeholder="Digite sua senha"
-          />
-          <span className={css.status}>🔴</span>
-        </div>
+        <Input type="email" name="email" placeholder="Digite seu e-mail" />
+        <Input type="password" name="password" placeholder="Digite sua senha" />
         <button className={css.submit} type="submit">
           Entrar
         </button>
