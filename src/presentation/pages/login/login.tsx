@@ -1,11 +1,9 @@
 import { FC } from 'react';
 
-import {
-  Footer,
-  LoginHeader,
-  Input,
-  FormStatus,
-} from 'presentation/components';
+import { Footer } from 'presentation/components/footer/footer';
+import { FormStatus } from 'presentation/components/form-status/form-status';
+import { Input } from 'presentation/components/input/input';
+import { LoginHeader } from 'presentation/components/login-header/login-header';
 
 import css from './login-styles.module.scss';
 

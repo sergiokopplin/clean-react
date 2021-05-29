@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
-import { Spinner } from '../spinner/spinner';
+import { Spinner } from 'presentation/components';
+
 import Styles from './form-status-styles.module.scss';
 
 export interface FormStatusProps {}
