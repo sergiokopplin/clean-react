@@ -1,6 +1,11 @@
 import { FC } from 'react';
 
-import { Spinner, Footer, LoginHeader, Input } from 'presentation/components';
+import {
+  Footer,
+  LoginHeader,
+  Input,
+  FormStatus,
+} from 'presentation/components';
 
 import css from './login-styles.module.scss';
 
@@ -18,10 +23,7 @@ export const Login: FC<LoginProps> = () => {
           Entrar
         </button>
         <span className={css.link}>Criar conta</span>
-        <div className={css.errorWrap}>
-          <Spinner className={css.spinner} />
-          <span className={css.error}>Erro</span>
-        </div>
+        <FormStatus />
       </form>
       <Footer />
     </div>
