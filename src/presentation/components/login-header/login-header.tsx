@@ -1,7 +1,6 @@
 import { FC, memo } from 'react';
 
-import { Logo } from 'presentation/components';
-
+import { Logo } from '../logo/logo';
 import Styles from './login-header-styles.module.scss';
 
 export interface LoginHeaderProps {}

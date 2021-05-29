@@ -4,7 +4,9 @@ import { Spinner, Footer, LoginHeader } from 'presentation/components';
 
 import css from './login-styles.module.scss';
 
-export const Login: FC = () => {
+export interface LoginProps {}
+
+export const Login: FC<LoginProps> = () => {
   return (
     <div className={css.login}>
       <LoginHeader />
