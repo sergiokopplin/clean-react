@@ -33,7 +33,12 @@ export const Login: FC<LoginProps> = () => {
             name="password"
             placeholder="Digite sua senha"
           />
-          <button className={css.submit} type="submit">
+          <button
+            data-testid="submit"
+            disabled
+            className={css.submit}
+            type="submit"
+          >
             Entrar
           </button>
           <span className={css.link}>Criar conta</span>
